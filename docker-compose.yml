@@ -8,3 +8,12 @@ services:
       POSTGRES_USER: posgres
       POSTGRES_PASSWORD: George.1o1
       POSTGRES_DB: nest
+      
+  test-db:
+    image: postgres:15
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER: posgres
+      POSTGRES_PASSWORD: George.1o1
+      POSTGRES_DB: nest
